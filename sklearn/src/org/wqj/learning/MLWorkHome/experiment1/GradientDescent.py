@@ -22,6 +22,7 @@ for data in range(0, len(dataSet)):
 # sqrt 平方根
 # square 平方
 # 原函数
+# theta_now为参数(想要模拟的变量)
 def return_Y_estimate(theta_now, data_x):
     # 确保theta_now为列向量
     theta_now = theta_now.reshape(-1, 1)
@@ -51,6 +52,7 @@ def return_J(theta_now, data_x, y_true):
     # 共有N组数据
     N = data_x.shape[0]
     temp = y_true - np.dot(data_x, theta_now)
+    # 组成平方  计算损失
     _J = np.dot(temp.T, temp) / N
 
     return _J
@@ -95,4 +97,4 @@ if __name__ == '__main__':
     area_nadrr = np.mat(area).reshape(-1, 1)
     martix_x = np.column_stack((rooms_nadrr, area_nadrr))
     martix_y = np.mat(price).reshape(-1, 1)
-    gradient_descent(martix_x, martix_y)
+    print(gradient_descent(martix_x, martix_y))

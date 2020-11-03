@@ -70,7 +70,7 @@ def gradient_descent(data_x, data_y, Learning_rate=0.01, ER=1e-10, MAX_LOOP=1e5)
     # 求解的未知元个数为
     _num_of_features = new_x.shape[1]
     # 初始化theta向量
-    theta = np.zeros([_num_of_features, 1]) * Learning_rate
+    theta = np.zeros([_num_of_features, 1])
     flag = 0  # 定义跳出标志位
     last_J = 0  # 用来存放上一次的Lose Function的值
     ct = 0  # 用来计算迭代次数

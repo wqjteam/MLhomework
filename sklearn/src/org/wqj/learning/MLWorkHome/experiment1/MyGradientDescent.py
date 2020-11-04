@@ -40,36 +40,37 @@ def return_dj(theta, data_x, data_y):
     # 每个theta都需要去求偏导,让在每个theta方向的损失都降低到最小(单个叫求导,多个叫梯度)
     for i in range(number_theta):
         # 对xi求偏导,data_x[:,i]表示取第一列,第二列,第三列
-        estimate_y[i, 0] = np.dot((estimate_y - data_y).T, data_x[:, i]) / N
+        DJ[i, 0] = np.dot((estimate_y - data_y).T, data_x[:, i]) / N
     return DJ
 
 
-def gradient_descent(data_x, data_y, Learning_rate=0.01, ER=0.01, MAX_LOOP=10000):
+def gradient_descent(data_x, data_y, Learning_rate=0.000000000001, ER=0.01, MAX_LOOP=1000000):
     # 把X多家一列,看走b,亦为X0
     number_datax = data_x.shape[0]  # 获取多少行数据
     new_column = np.ones([number_datax, 1])  # 生成一列全为1的列值
     new_data_x = np.column_stack((data_x, new_column))
-    theta = np.mat(np.random.normal(0, 1, [number_datax + 1, 1]))
+    theta = np.mat(np.random.normal(0, 1, [new_data_x.shape[1], 1]))
     loss = np.zeros([1, MAX_LOOP]).flatten()
-    print(loss)
     for i in range(MAX_LOOP):
         last_theta = theta  # 保存上次的theta的值
         gradient = return_dj(theta, new_data_x, data_y)
         theta = theta - Learning_rate * gradient  # 为梯度优化公式
         # 判断准确率是否小于某个认为的值,如果小于的话,直接跳出
-        loss[i] = return_j(theta, new_data_x, data_y)
-        er = abs(return_j(last_theta, new_data_x, data_y) - return_j(theta, new_data_x,
-                                                                     data_y))  # 对比上次和这次的采用不同的theta的区别,计算loss abs绝对值
-        if er < ER:
-            return loss, theta
+        # print(return_j(last_theta, new_data_x, data_y))
+        loss[i] = return_j(last_theta, new_data_x, data_y)
+        # print(loss[i])
+        # print((last_theta==theta).all())
+        # er = abs(return_j(last_theta, new_data_x, data_y) - return_j(theta, new_data_x,
+        #                                                              data_y))  # 对比上次和这次的采用不同的theta的区别,计算loss abs绝对值
+        # if er < ER:
+        #     return loss, theta
     return loss, theta
 
 
 if __name__ == '__main__':
-    # 演示如何使用梯度下降法GD()
-    line_x = np.linspace(0, 10000, 10000)  # 进行均分
-    data_y = np.mat(price).reshape(-1,1)
-    data_x = np.column_stack((np.mat(rooms).reshape(-1,1), np.mat(area).reshape(-1,1)))
+    line_x = np.linspace(0, 1000000, 1000000)  # 进行均分
+    data_y = np.mat(price).reshape(-1, 1)
+    data_x = np.column_stack((np.mat(rooms).reshape(-1, 1), np.mat(area).reshape(-1, 1)))
     loss, theta = gradient_descent(data_x, data_y)
     plt.plot(line_x, loss, c='r')
     plt.legend()

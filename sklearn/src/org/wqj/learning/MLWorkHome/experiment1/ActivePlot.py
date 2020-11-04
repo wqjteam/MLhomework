@@ -20,6 +20,6 @@ for i in range(100):
     plt.plot(t_now,sin(t_now),'-r') # 第次对画布添加一个点，覆盖式的。
     # plt.scatter(t_now, sin(t_now))
 
-    # plt.draw()#注意此函数需要调用
+    # plt.draw() #注意此函数需要调用
     # plt.show()
     plt.pause(0.01)

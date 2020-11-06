@@ -15,7 +15,7 @@ for i in range(500):
     col[i] = np.random.randint(0, 200)
     data[i] = np.random.randint(1,11)
 # print(max(col))
-spr_A = ss.coo_matrix((data, (row, col)), shape=(100, 100)).reshape(50,200).toarray()  # 构造50*200的矩阵
+spr_A = ss.coo_matrix((data, (row, col)), shape=(50, 200)).toarray()  # 构造50*200的矩阵
 # 利用excel保存
 f = xlwt.Workbook()
 sheet1 = f.add_sheet(u'sheet1', cell_overwrite_ok=True)  # 创建sheet

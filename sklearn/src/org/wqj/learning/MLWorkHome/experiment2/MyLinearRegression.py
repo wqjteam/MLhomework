@@ -9,6 +9,7 @@ curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = curPath[:curPath.find("sklearn\\") + len("sklearn\\")]
 dataPath = rootPath + "Input/MLWorkHome/experiment2/data.csv"
 x_y_data = pd.read_csv(dataPath,header=1)
+print(x_y_data[1][1])
 year = []
 bus = []
 gdp = []

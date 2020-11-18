@@ -14,7 +14,7 @@ year = []
 bus = []
 gdp = []
 for index in range(0, len(x_y_data)):
-    year.append(x_y_data[1][index])
-    bus.append(x_y_data[2][index])
-    gdp.append(x_y_data[3][index])
+    year.append(x_y_data["Year"][index])
+    bus.append(x_y_data["Bus"][index])
+    gdp.append(x_y_data["PGDP"][index])
 print(year)

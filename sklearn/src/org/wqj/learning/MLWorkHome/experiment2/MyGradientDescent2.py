@@ -1,6 +1,5 @@
 # coding=utf-8
 import os
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -18,7 +17,7 @@ for index in range(0, len(x_y_data)):
     bus.append(x_y_data["Bus"][index])
     gdp.append(x_y_data["PGDP"][index])
 
-# 进行数据切分,将80用于训练,20用于预测检测
+
 X_train = np.array(bus).reshape(-1, 1)
 y_train = np.array(gdp).reshape(-1, 1)
 

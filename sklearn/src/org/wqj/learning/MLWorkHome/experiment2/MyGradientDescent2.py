@@ -83,6 +83,9 @@ if __name__ == '__main__':
     data_x = np.mat(X_train).reshape(-1, 1)
     loss, theta = gradient_descent(data_x, data_y)
     plt.plot(line_x, loss, c='r')
+    plt.title("GDP预测")
+    plt.xlabel('次数')
+    plt.ylabel('loss')
 
 
     # plt.show()
@@ -96,7 +99,10 @@ if __name__ == '__main__':
     new_column = np.ones([number_datax, 1])  # 生成一列全为1的列值
     new_data_x = np.column_stack((np.mat(X_train).reshape(-1,1), new_column))
     y2 = return_y_estimate(theta, new_data_x)
-    # 绘制预测的披萨价格-直径曲线，图中绿色直线
+    # 得治gdp绘图
     plt.plot(X_train, y2, 'g-')
+    plt.title("损失值")
+    plt.xlabel('bus')
+    plt.ylabel('gdp')
     plt.legend()
     plt.show()

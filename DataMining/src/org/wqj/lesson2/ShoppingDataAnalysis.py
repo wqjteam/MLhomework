@@ -94,6 +94,9 @@ plt.subplots_adjust(wspace=0.4, hspace=0.4)
 plt.xlabel('Height(m)')
 plt.ylabel('Weight(kg)')
 plt.title("purchase_top")
-plt.bar()
+name_list = ['Monday','Tuesday','Friday']
+plt.bar([1,2,3],[10,20,30],fc='r')
+# plt.bar([1,2,3],[10,20,30],fc='r',tick_label=name_list)
+plt.show()
 #下面可以做根据用户购买的商品和用户两个基本属性
 # 来做基于用户的来做过滤推荐

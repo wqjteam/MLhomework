@@ -56,6 +56,7 @@ clf_sigmoid = svm.SVC(kernel='sigmoid').fit(x, y)
 
 for i, clf in enumerate((clf_linear, clf_poly, clf_rbf, clf_sigmoid)):
     answer = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+    #设置位置和大小
     plt.subplot(2, 2, i + 1)
     plt.subplots_adjust(wspace=0.4, hspace=0.4)
 

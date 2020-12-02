@@ -19,28 +19,22 @@ for index in range(0, len(x_y_data)):
 
 # 进行数据切分,将80用于训练,20用于预测检测
 offset = int(len(bus) * 0.8)
-X_train = bus[:offset]
-X_predict = bus[offset:]
-y_train = gdp[:offset]
-y_predict = gdp[offset:]
+
 # 一个线性回归模型对象model，此时model内的theta参数并没有值
 model = LinearRegression()
-X_train = np.array(X_train).reshape(-1, 1)
-y_train = np.array(y_train).reshape(-1, 1)
-X_predict = np.array(X_predict).reshape(-1, 1)
-y_predict = np.array(y_predict).reshape(-1, 1)
+X_train = np.array(bus).reshape(-1, 1)
+y_train = np.array(gdp).reshape(-1, 1)
 
-print(X_train)
-print("------")
-print(X_predict)
+
+
 model.fit(X_train, y_train)
 
 # 进行预测
-y2 = model.predict(X_predict)
+y2 = model.predict(X_train)
 print("预测")
-print(y_predict)
-print("实际值")
 print(y2)
+print("实际值")
+print(y_train)
 
 
 # Plot 为绘图函数，同学们可以利用这个函数建立画布和基本的网格
@@ -49,7 +43,7 @@ def Plot():
     plt.title('Data')
     plt.xlabel('Diameter(Inches)')
     plt.ylabel('Price(Dollar)')
-    plt.axis([np.min(bus), np.max(bus), np.min(gdp), np.max(bus)])
+    # plt.axis([30000, 100000, 450000, 500000])
     plt.grid(True)
     return plt
 
@@ -58,8 +52,8 @@ def Plot():
 plt = Plot()
 
 # 在网格上绘制原始数据散点，图中黑色散点
-plt.plot(X_predict, y_predict, 'k.')
+plt.plot(X_train, y_train, 'k.')
 
 # 绘制预测的披萨价格-直径曲线，图中绿色直线
-plt.plot(X_predict, y2, 'g-')
+plt.plot(X_train, y2, 'g-')
 plt.show()

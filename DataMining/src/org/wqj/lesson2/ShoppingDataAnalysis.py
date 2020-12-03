@@ -138,26 +138,31 @@ def anaysis_data():
 def recommended_system():
     user_merchant = pd.read_sql_query("  select user_id,merchant_id  from order_detail ", msqldb)
     zero_martix = np.zeros((user_merchant["user_id"].unique().shape[0], user_merchant["merchant_id"].unique().shape[0]))
+    user_merchant.groupby('user_id').apply(lambda x: list(user_merchant.merchant_id))
     user_merchants = pd.read_sql_query(
         "  select user_id,GROUP_CONCAT(merchant_id) as merchant_ids  from order_detail group by user_id", msqldb)
     merchant_list = user_merchant["merchant_id"].unique().tolist()
+    merchant_list.sort(reverse=True)
     user_id_list = user_merchant["user_id"].unique().tolist()
+    user_id_list.sort(reverse=True)
     # 组装用户字典
     user_dict = {}
-    for i in range(user_id_list):
+    for i in range(len(user_id_list)):
         user_dict[user_id_list[i]] = i
 
     # 组装商品字典
     merchant_dict = {}
-    for i in range(merchant_list):
+    for i in range(len(merchant_list)):
         merchant_dict[merchant_list[i]] = i
 
     # 填写矩阵
     for i in range(user_merchants.shape[0]):
         user_id = user_merchants.iloc[i][0]
         merchant_ids = str(user_merchants.iloc[i][1]).split(",")
+        u_id = user_dict[user_id]
         for merchant_id in merchant_ids:
-            zero_martix[user_dict[user_id]][merchant_dict[merchant_id]] = 1
+            m_id = merchant_dict[int(merchant_id)]
+            zero_martix[u_id][m_id] = 1
 
     return user_dict, merchant_dict, zero_martix
 
@@ -178,4 +183,4 @@ if __name__ == '__main__':
 
     # 下面可以做根据用户购买的商品和用户两个基本属性,将数据达成 522341*1994的矩阵
     # 来做基于用户的来做过滤推荐
-    user_dict, merchant_dict, zero_martix=recommended_system()
+    user_dict, merchant_dict, zero_martix = recommended_system()

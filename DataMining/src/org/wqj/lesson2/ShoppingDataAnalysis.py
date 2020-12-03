@@ -5,12 +5,10 @@ import pandas as pd
 import sqlalchemy as sqla
 import os
 
-ip="115.159.151.166"
-database="study"
-user="root"
-password="buaaai123456"
-
-
+ip = "115.159.151.166"
+database = "study"
+user = "root"
+password = "buaaai123456"
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = curPath[:curPath.find("DataMining\\") + len("DataMining\\")]
@@ -35,7 +33,7 @@ order_detail = pd.merge(order, user_info, left_on=["user_id"], right_on=["user_i
 print("数据的维度")
 print(order_detail.head(5))
 
-msqldb = sqla.create_engine('mysql+pymysql://%s:%s@%s/%s?charset=utf8'%(user,password,ip,database))
+msqldb = sqla.create_engine('mysql+pymysql://%s:%s@%s/%s?charset=utf8' % (user, password, ip, database))
 # 订单详情展示 前条
 #    merchant_id  user_id  age_range  gender
 # 0         4605   163968        0.0     0.0
@@ -59,44 +57,43 @@ msqldb = sqla.create_engine('mysql+pymysql://%s:%s@%s/%s?charset=utf8'%(user,pas
 # order_detail.to_sql("order_detail",msqldb, index=False, if_exists='replace',chunksize=10000)
 
 
-#计算每个用户下单量
+# 计算每个用户下单量
 print("用户下单量TOP10")
 purchase_top = pd.read_sql_query("select user_id,purchase_num from ("
                                  "  select user_id,count(merchant_id) as purchase_num from order_detail group by  user_id"
                                  " ) a order by purchase_num desc  limit 10", msqldb)
 print(purchase_top)
 
-#找出销售量前10的商品
+# 找出销售量前10的商品
 print("商品销售量TOP10")
 commodity_top = pd.read_sql_query("select merchant_id,user_num from ("
                                   "  select merchant_id,count(user_id) as user_num from order_detail group by  merchant_id"
                                   " ) a order by user_num desc  limit 10", msqldb)
 print(commodity_top)
 
-
-#各年龄段购买数量
+# 各年龄段购买数量
 print("各年龄段购买数量")
-group_age_purchase = pd.read_sql_query("  select age_range,count(1) as purchase_num from order_detail group by  age_range"
-                                       "", msqldb)
+group_age_purchase = pd.read_sql_query(
+    "  select age_range,count(1) as purchase_num from order_detail group by  age_range"
+    "", msqldb)
 print(group_age_purchase)
 
-#展示各性别购买数量
+# 展示各性别购买数量
 print("各性别购买数量")
 group_gender_purchase = pd.read_sql_query("  select gender,count(1) as purchase_num from order_detail group by  gender"
-                                       "", msqldb)
+                                          "", msqldb)
 print(group_gender_purchase)
 
-
-#画图
+# 画图
 plt.figure()
 plt.subplot(2, 2, 1)
 plt.subplots_adjust(wspace=0.4, hspace=0.4)
 plt.xlabel('Height(m)')
 plt.ylabel('Weight(kg)')
 plt.title("purchase_top")
-name_list = ['Monday','Tuesday','Friday']
-plt.bar([1,2,3],[10,20,30],fc='r')
+name_list = ['Monday', 'Tuesday', 'Friday']
+plt.bar([1, 2, 3], [10, 20, 30], fc='r')
 # plt.bar([1,2,3],[10,20,30],fc='r',tick_label=name_list)
 plt.show()
-#下面可以做根据用户购买的商品和用户两个基本属性
+# 下面可以做根据用户购买的商品和用户两个基本属性
 # 来做基于用户的来做过滤推荐

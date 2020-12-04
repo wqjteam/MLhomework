@@ -6,7 +6,7 @@ import xlwt
 from numpy import linalg as la
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = curPath[:curPath.find("DataMining\\") + len("DataMining\\")]
-dataPath = rootPath + "Input/"
+dataPath = rootPath + "Input/lesson1"
 col = [0] * 500
 row = [0] * 500
 data = [0] * 500

@@ -18,10 +18,10 @@ def pre_parse_and_load_data():
 
     # 数据来源:阿里天池竞赛平台_天猫真实数据
     # 大数据可视化分析作业三:要求分析100000*50的数据
-    test_format1 = pd.read_csv(rootPath + 'Input/test_format1.csv', header=0)
+    test_format1 = pd.read_csv(rootPath + 'Input/lesson2/test_format1.csv', header=0)
     # print(test_format1)
-    train_format1 = pd.read_csv(rootPath + 'Input/train_format1.csv', header=0)
-    user_info = pd.read_csv(rootPath + 'Input/user_info_format1.csv', header=0)
+    train_format1 = pd.read_csv(rootPath + 'Inputt/lesson2/train_format1.csv', header=0)
+    user_info = pd.read_csv(rootPath + 'Inputt/lesson2/user_info_format1.csv', header=0)
 
     # 该数据本是用于机器学习数据,我们将test_format1和train_format1合并
     order = pd.concat([test_format1, train_format1], axis=0)[["merchant_id", "user_id"]]

@@ -3,6 +3,7 @@ import scipy.sparse as ss
 import matplotlib.pyplot as plt
 import pandas as pd
 import sqlalchemy as sqla
+from sklearn.metrics.pairwise import cosine_similarity
 import os
 
 import src.org.wqj.util.mysqlconf as mysqlconf
@@ -138,7 +139,8 @@ def anaysis_data():
 def recommended_system():
     user_merchant = pd.read_sql_query("  select user_id,merchant_id  from order_detail ", msqldb)
     zero_martix = np.zeros((user_merchant["user_id"].unique().shape[0], user_merchant["merchant_id"].unique().shape[0]))
-    user_merchant.groupby('user_id').apply(lambda x: list(user_merchant.merchant_id))
+    # 发现在pandas中聚合数据,会卡死机器,适合放在数据库中跑
+    # user_merchants_pandas=user_merchant.groupby('user_id').apply(lambda x: list(x.merchant_id))
     user_merchants = pd.read_sql_query(
         "  select user_id,GROUP_CONCAT(merchant_id) as merchant_ids  from order_detail group by user_id", msqldb)
     merchant_list = user_merchant["merchant_id"].unique().tolist()
@@ -184,3 +186,12 @@ if __name__ == '__main__':
     # 下面可以做根据用户购买的商品和用户两个基本属性,将数据达成 522341*1994的矩阵
     # 来做基于用户的来做过滤推荐
     user_dict, merchant_dict, zero_martix = recommended_system()
+
+    # 获取到矩阵之后,对用户进行余弦相似度计算即可
+
+    # 比较第一行和第二行的相似度(调用两种方法)
+    # 使用np
+    score_similar_np = np.dot(zero_martix[1][:], zero_martix[2][:]) / (np.linalg.norm(zero_martix[1][:]) * np.linalg.norm(zero_martix[2][:]))
+    # 使用sklearn
+    score_similar_sklearn = cosine_similarity(np.mat(zero_martix[1][:]).reshape(1,-1), np.mat(zero_martix[2][:]).reshape(1,-1))
+    print(str(score_similar_np)+"||||"+str(score_similar_sklearn))

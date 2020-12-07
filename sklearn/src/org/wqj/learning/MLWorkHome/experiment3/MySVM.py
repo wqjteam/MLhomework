@@ -48,7 +48,7 @@ titles = ['LinearSVC (linear kernel)',
 # 核函数为线性函数
 clf_linear = svm.SVC(kernel='linear').fit(x, y)
 # 核函数为多项式函数
-clf_poly = svm.SVC(kernel='poly').fit(x, y)
+clf_poly = svm.SVC(kernel='poly',degree=2).fit(x, y)
 # 核函数为径向基函数
 clf_rbf = svm.SVC(kernel='rbf').fit(x, y)
 # 核函数为Sigmoid函数
@@ -56,7 +56,7 @@ clf_sigmoid = svm.SVC(kernel='sigmoid').fit(x, y)
 
 for i, clf in enumerate((clf_linear, clf_poly, clf_rbf, clf_sigmoid)):
     answer = clf.predict(np.c_[xx.ravel(), yy.ravel()])
-    #设置位置和大小
+    # 设置位置和大小
     plt.subplot(2, 2, i + 1)
     plt.subplots_adjust(wspace=0.4, hspace=0.4)
 

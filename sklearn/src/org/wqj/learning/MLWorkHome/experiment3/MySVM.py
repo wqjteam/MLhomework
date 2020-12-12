@@ -46,13 +46,13 @@ titles = ['LinearSVC (linear kernel)',
 # 'linear', 'poly', 'rbf', 'sigmoid', 'precomputed'
 # 建立模型并拟合数据
 # 核函数为线性函数
-clf_linear = svm.SVC(kernel='linear').fit(x, y)
+clf_linear = svm.SVC(kernel='linear',C=100).fit(x, y)
 # 核函数为多项式函数
 clf_poly = svm.SVC(kernel='poly',degree=2).fit(x, y)
 # 核函数为径向基函数
-clf_rbf = svm.SVC(kernel='rbf').fit(x, y)
+clf_rbf = svm.SVC(kernel='rbf',C=100).fit(x, y)
 # 核函数为Sigmoid函数
-clf_sigmoid = svm.SVC(kernel='sigmoid').fit(x, y)
+clf_sigmoid = svm.SVC(kernel='sigmoid',C=1).fit(x, y)
 
 for i, clf in enumerate((clf_linear, clf_poly, clf_rbf, clf_sigmoid)):
     answer = clf.predict(np.c_[xx.ravel(), yy.ravel()])

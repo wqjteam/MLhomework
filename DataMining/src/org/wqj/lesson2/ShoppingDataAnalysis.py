@@ -5,7 +5,6 @@ import pandas as pd
 import sqlalchemy as sqla
 from sklearn.metrics.pairwise import cosine_similarity
 import os
-
 import src.org.wqj.util.mysqlconf as mysqlconf
 
 msqldb = sqla.create_engine('mysql+pymysql://%s:%s@%s/%s?charset=utf8' % (

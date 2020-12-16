@@ -1,7 +1,11 @@
 from numpy import *
 import time
 import matplotlib.pyplot as plt
+import os
 
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = curPath[:curPath.find("sklearn\\") + len("sklearn\\")]
+dataPath = rootPath + "Input/MLWorkHome/experiment4/Data.txt"
 
 # euclDistance函数计算两个向量之间的欧氏距离
 def euclDistance(vector1, vector2):
@@ -57,7 +61,20 @@ def kmeans(dataSet, k):
         ## 步骤四: 更新簇的均值点
         for j in range(k):
             pointsInCluster = dataSet[nonzero(clusterAssment[:, 0].A == j)[0]]
-            centroids[j, :] = mean(pointsInCluster, axis=0)
+            # centroids[j, :] = mean(pointsInCluster, axis=0)
+
+            min_dist_sum = -1
+            min_dist_index = 0
+            # 获取到聚簇中距离所有最近的点，即可
+            for pointsInCluster_index in range(pointsInCluster.shape[0]):
+                dist_sum = 0
+                for pointsInCluster_index_2 in range(pointsInCluster.shape[0]):
+                    dist_sum += euclDistance(pointsInCluster[pointsInCluster_index][:]
+                                             , pointsInCluster[pointsInCluster_index_2][:])
+                if (min_dist_sum == -1 or min_dist_sum > dist_sum):
+                    min_dist_index = pointsInCluster_index
+                    min_dist_sum = dist_sum
+            centroids[j, :] = dataSet[min_dist_index, :]
 
     print('Congratulations, cluster complete!')
     return centroids, clusterAssment
@@ -90,7 +107,7 @@ def showCluster(dataSet, k, centroids, clusterAssment):
 
 ## step 1: 载入数据
 dataSet = []
-fileIn = open('./Input/Data.txt')
+fileIn = open(dataPath)
 for line in fileIn.readlines():
     lineArr = line.strip().split('\t')
     dataSet.append([float(lineArr[0]), float(lineArr[1])])

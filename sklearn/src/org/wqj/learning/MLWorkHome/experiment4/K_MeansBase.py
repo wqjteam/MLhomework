@@ -1,9 +1,11 @@
 from numpy import *
 import time
 import matplotlib.pyplot as plt
+import os
 
-
-
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = curPath[:curPath.find("sklearn\\") + len("sklearn\\")]
+dataPath = rootPath + "Input/MLWorkHome/experiment4/Data.txt"
 
 # euclDistance函数计算两个向量之间的欧氏距离
 def euclDistance(vector1, vector2):
@@ -92,7 +94,7 @@ def showCluster(dataSet, k, centroids, clusterAssment):
 
 ## step 1: 载入数据
 dataSet = []
-fileIn = open('./Input/Data.txt')
+fileIn = open(dataPath)
 for line in fileIn.readlines():
     lineArr = line.strip().split('\t')
     dataSet.append([float(lineArr[0]), float(lineArr[1])])

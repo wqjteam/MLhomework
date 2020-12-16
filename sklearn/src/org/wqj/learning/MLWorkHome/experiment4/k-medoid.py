@@ -1,4 +1,5 @@
 from numpy import *
+import numpy as np
 import time
 import matplotlib.pyplot as plt
 import os
@@ -38,8 +39,9 @@ def kmeans(dataSet, k):
 
     ## 步骤一: 初始化均值点
     centroids = initCentroids(dataSet, k)
-
+    runcount = 0
     while clusterChanged:
+        runcount += 1
         clusterChanged = False
         ## 遍历每一个样本点
         for i in range(numSamples):
@@ -62,24 +64,32 @@ def kmeans(dataSet, k):
         ## 步骤四: 更新簇的均值点
         for j in range(k):
             pointsInCluster = dataSet[nonzero(clusterAssment[:, 0].A == j)[0]]
-            #nonzero(clusterAssment[:, 0].A == j) 的到数据中不等于j的索引[i][j]
-            #clusterAssment和dataSet 是一一对应的 (数据条目相同)
+            # nonzero(clusterAssment[:, 0].A == j) 的到数据中不等于j的索引[i][j]
+            # clusterAssment和dataSet 是一一对应的 (数据条目相同)
             # centroids[j, :] = mean(pointsInCluster, axis=0)
-            min_dist_sum = -1
-            min_dist_index = 0
-            # 获取到聚簇中距离所有最近的点，即可
-            for pointsInCluster_index in range(pointsInCluster.shape[0]):
-                dist_sum = 0
-                for pointsInCluster_index_2 in range(pointsInCluster.shape[0]):
-                    dist_sum += euclDistance(pointsInCluster[pointsInCluster_index][:]
-                                             , pointsInCluster[pointsInCluster_index_2][:])
-                if (min_dist_sum == -1 or min_dist_sum > dist_sum):
-                    min_dist_index = pointsInCluster_index
-                    min_dist_sum = dist_sum
-            centroids[j, :] = dataSet[min_dist_index, :]
 
+            centroids[j, :] =k_medoid(pointsInCluster)
+            #centroids[j, :] = np.median(pointsInCluster, axis=0)
+        if (runcount % 10 == 0):
+            print('运行次数:%d' % runcount)
     print('Congratulations, cluster complete!')
     return centroids, clusterAssment
+
+
+def k_medoid(pointsInCluster):
+    min_dist_sum = 1000000
+    min_dist_index = 0
+    # 获取到聚簇中距离所有最近的点，即可
+    for pointsInCluster_index in range(pointsInCluster.shape[0]):
+        dist_sum = 0
+        for pointsInCluster_index_2 in range(pointsInCluster.shape[0]):
+            dist_sum += euclDistance(pointsInCluster[pointsInCluster_index, :]
+                                     , pointsInCluster[pointsInCluster_index_2, :])
+        if dist_sum < min_dist_sum:
+            min_dist_index = pointsInCluster_index
+            min_dist_sum = dist_sum
+    #dataSet[pointsInCluster]写错了
+    return pointsInCluster[min_dist_index, :]
 
 
 # showCluster利用pyplot绘图显示聚类结果（二维平面）

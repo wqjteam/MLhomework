@@ -7,6 +7,7 @@ curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = curPath[:curPath.find("sklearn\\") + len("sklearn\\")]
 dataPath = rootPath + "Input/MLWorkHome/experiment4/Data.txt"
 
+
 # euclDistance函数计算两个向量之间的欧氏距离
 def euclDistance(vector1, vector2):
     return sqrt(sum(power(vector2 - vector1, 2)))
@@ -61,6 +62,8 @@ def kmeans(dataSet, k):
         ## 步骤四: 更新簇的均值点
         for j in range(k):
             pointsInCluster = dataSet[nonzero(clusterAssment[:, 0].A == j)[0]]
+            #nonzero(clusterAssment[:, 0].A == j) 的到数据中不等于j的索引[i][j]
+            #clusterAssment和dataSet 是一一对应的 (数据条目相同)
             # centroids[j, :] = mean(pointsInCluster, axis=0)
 
             min_dist_sum = -1

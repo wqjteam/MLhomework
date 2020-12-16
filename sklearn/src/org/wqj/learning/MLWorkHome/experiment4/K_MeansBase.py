@@ -37,8 +37,9 @@ def kmeans(dataSet, k):
 
     ## 步骤一: 初始化均值点
     centroids = initCentroids(dataSet, k)
-
+    runcount=0
     while clusterChanged:
+        runcount+=1
         clusterChanged = False
         ## 遍历每一个样本点
         for i in range(numSamples):
@@ -64,6 +65,7 @@ def kmeans(dataSet, k):
             centroids[j, :] = mean(pointsInCluster, axis=0)
 
     print('Congratulations, cluster complete!')
+    print('运行次数:%d'%runcount)
     return centroids, clusterAssment
 
 

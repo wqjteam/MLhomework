@@ -65,7 +65,6 @@ def kmeans(dataSet, k):
             #nonzero(clusterAssment[:, 0].A == j) 的到数据中不等于j的索引[i][j]
             #clusterAssment和dataSet 是一一对应的 (数据条目相同)
             # centroids[j, :] = mean(pointsInCluster, axis=0)
-
             min_dist_sum = -1
             min_dist_index = 0
             # 获取到聚簇中距离所有最近的点，即可

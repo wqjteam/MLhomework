@@ -66,6 +66,7 @@ def svdEst(dataMat, user, simMeas, item, percentage):
     ratSimTotal = 0.0
     u, sigma, vt = la.svd(dataMat)
     #使用
+    # sigma奇异值
     k = sigmaPct(sigma, percentage)
     # 确定了需要保留的奇异值数量k
     sigmaK = mat(eye(k) * sigma[:k])

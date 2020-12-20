@@ -98,5 +98,11 @@ def recommend(dataMat,user,N=5,simMeas=cosSim,estMethod=svdEst,percentage=0.9):
     #返回前N大评分值的item名，及其预测评分值
 
 testdata=loadExData()
-print(recommend(testdata,1,N=3,percentage=0.8))
+# print(recommend(testdata,1,N=3,percentage=0.8))
 #对编号为1的用户推荐评分较高的3件商品
+
+#练习1：在下面的代码框中，实现对编号为3的用户推荐评分最高的4件商品（代码填写在括号内）
+print(recommend(testdata,3,N=3,percentage=0.8))
+
+#练习2：
+

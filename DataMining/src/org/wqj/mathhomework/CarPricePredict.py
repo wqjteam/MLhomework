@@ -68,6 +68,9 @@ def ETL(origin_data):
 pure_data = ETL(origin_data)
 print(pure_data[:2, :])
 train, test = train_test_split(pure_data, test_size=0.3)
-dt_reg = DecisionTreeRegressor(max_depth=24)
+#criterion：gini,entropy,mse,前者是基尼系数，后者是信息熵
+# dt_reg = DecisionTreeRegressor(criterion='entropy',max_depth=24)
+dt_reg = DecisionTreeRegressor(criterion='mse',max_depth=24)
 dt_reg.fit(train[:, 0:-1], train[:, -1:])
 print(dt_reg.score(test[:, 0:-1], test[:, -1:]))
+print(dt_reg)

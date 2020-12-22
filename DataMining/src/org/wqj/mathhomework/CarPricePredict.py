@@ -8,10 +8,10 @@ import os
 import sklearn.tree as tree
 import sklearn.model_selection as model_selection
 
-
 import pandas as  pd
 import pydotplus
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 os.environ["PATH"] += os.pathsep + 'D:/Program Files/Graphviz 2.44.1/bin'
 curPath = os.path.abspath(os.path.dirname(__file__))
@@ -22,6 +22,12 @@ origin_data = pd.read_csv(rootPath + 'Input/mathhomework/car_price/CarPrice_Assi
 
 
 def ETL(origin_data):
+    # pd.plotting.scatter_matrix(origin_data, alpha=0.7, figsize=(15, 15), diagonal='kde')
+    # plt.show()
+    # print(origin_data.corr())
+    # annot: 默认为False，为True的话，会在格子上显示数字
+    # sns.heatmap(origin_data.corr(), linewidths=0.1, vmax=1.0, square=True, linecolor='white', annot=False)
+    sns.heatmap((origin_data.drop('price', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=False)
     origin_data = np.mat(origin_data)
     for index in range(origin_data.shape[0]):
         origin_data[index, 2] = str(origin_data[index, 2]).split(" ")[0].lower()
@@ -70,26 +76,45 @@ def ETL(origin_data):
 # 将数据进行训练和测试的分割
 pure_data = ETL(origin_data)
 print(pure_data[:2, :])
-train, test = model_selection.train_test_split(pure_data, test_size=0.3)
-#criterion：gini,entropy,mse,前者是基尼系数，后者是信息熵
+
+# criterion：gini,entropy,mse,前者是基尼系数，后者是信息熵
 # dt_reg = DecisionTreeRegressor(criterion='entropy',max_depth=24)
-dt_reg = tree.DecisionTreeRegressor(criterion='mse',max_depth=24)
+
+# 对决策树深度进行判断
+score = np.empty((1, 24), dtype=float)
+
+score = score.flatten()
+for i in range(24):
+    for j in range(10):
+        train, test = model_selection.train_test_split(pure_data, test_size=0.3)
+        dt_reg = tree.DecisionTreeRegressor(criterion='mse', max_depth=i + 1)
+        dt_reg.fit(train[:, 0:-1], train[:, -1:])
+        score[i] += dt_reg.score(test[:, 0:-1], test[:, -1:])
+    score[i] = float('%.3f' % (score[i] / 10))
+
+plt.figure()
+plt.xlabel('tree deepth')
+plt.ylabel('accuracy rate')
+plt.title("deepth-accuracy")
+plt.plot(range(len((score * 1000).astype(int))), score, color='#ADFF2F')
+plt.xticks(np.arange(1, 25, 1))
+plt.show()
+
+# 由图可见当deepth为17的时候,准确率最高
+train, test = model_selection.train_test_split(pure_data, test_size=0.3)
+dt_reg = tree.DecisionTreeRegressor(criterion='mse', max_depth=17)
 dt_reg.fit(train[:, 0:-1], train[:, -1:])
-print(dt_reg.score(test[:, 0:-1], test[:, -1:]))
 
 # pip install pydotplus
 # pip install graphviz
-
-#画图方法1-生成dot文件
+# 画图方法1-生成dot文件
 with open(rootPath + 'Output/mathhomework/car_price/TreeRegressor.dot', 'w') as f:
-  dot_data = tree.export_graphviz(dt_reg, out_file=None)
-  f.write(dot_data)
+    dot_data = tree.export_graphviz(dt_reg, out_file=None)
+    f.write(dot_data)
 
-  #画图方法2-生成pdf文件
-  dot_data = tree.export_graphviz(dt_reg, out_file=None,feature_names=dt_reg.feature_importances_,
-                                  filled=True, rounded=True, special_characters=True)
-  graph = pydotplus.graph_from_dot_data(dot_data)
-  ###保存图像到pdf文件
-  graph.write_pdf(rootPath + 'Output/mathhomework/car_price/TreeRegressor.pdf')
-
-
+    # 画图方法2-生成pdf文件
+    dot_data = tree.export_graphviz(dt_reg, out_file=None, feature_names=dt_reg.feature_importances_,
+                                    filled=True, rounded=True, special_characters=True)
+    graph = pydotplus.graph_from_dot_data(dot_data)
+    ###保存图像到pdf文件
+    graph.write_pdf(rootPath + 'Output/mathhomework/car_price/TreeRegressor.pdf')

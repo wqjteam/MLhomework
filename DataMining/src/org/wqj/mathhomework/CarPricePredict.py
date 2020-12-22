@@ -27,7 +27,7 @@ def ETL(origin_data):
     # print(origin_data.corr())
     # annot: 默认为False，为True的话，会在格子上显示数字
     # sns.heatmap(origin_data.corr(), linewidths=0.1, vmax=1.0, square=True, linecolor='white', annot=False)
-    sns.heatmap((origin_data.drop('price', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=False)
+    sns.heatmap((origin_data.drop('price', axis=1).drop('car_ID', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=True)
     origin_data = np.mat(origin_data)
     for index in range(origin_data.shape[0]):
         origin_data[index, 2] = str(origin_data[index, 2]).split(" ")[0].lower()

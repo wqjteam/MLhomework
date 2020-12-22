@@ -5,14 +5,17 @@ import pandas as pd
 import sqlalchemy as sqla
 from sklearn.metrics.pairwise import cosine_similarity
 import os
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import train_test_split
+import sklearn.tree as tree
+import sklearn.model_selection as model_selection
 
-import src.org.wqj.util.mysqlconf as mysqlconf
 
+import pandas as  pd
+import pydotplus
+
+
+os.environ["PATH"] += os.pathsep + 'D:/Program Files/Graphviz 2.44.1/bin'
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = curPath[:curPath.find("DataMining\\") + len("DataMining\\")]
-
 # 数据来源:阿里天池竞赛平台_天猫真实数据
 # 大数据可视化分析作业三:要求分析100000*50的数据
 origin_data = pd.read_csv(rootPath + 'Input/mathhomework/car_price/CarPrice_Assignment.csv', header=0)
@@ -67,10 +70,26 @@ def ETL(origin_data):
 # 将数据进行训练和测试的分割
 pure_data = ETL(origin_data)
 print(pure_data[:2, :])
-train, test = train_test_split(pure_data, test_size=0.3)
+train, test = model_selection.train_test_split(pure_data, test_size=0.3)
 #criterion：gini,entropy,mse,前者是基尼系数，后者是信息熵
 # dt_reg = DecisionTreeRegressor(criterion='entropy',max_depth=24)
-dt_reg = DecisionTreeRegressor(criterion='mse',max_depth=24)
+dt_reg = tree.DecisionTreeRegressor(criterion='mse',max_depth=24)
 dt_reg.fit(train[:, 0:-1], train[:, -1:])
 print(dt_reg.score(test[:, 0:-1], test[:, -1:]))
-print(dt_reg)
+
+# pip install pydotplus
+# pip install graphviz
+
+#画图方法1-生成dot文件
+with open(rootPath + 'Output/mathhomework/car_price/TreeRegressor.dot', 'w') as f:
+  dot_data = tree.export_graphviz(dt_reg, out_file=None)
+  f.write(dot_data)
+
+  #画图方法2-生成pdf文件
+  dot_data = tree.export_graphviz(dt_reg, out_file=None,feature_names=dt_reg.feature_importances_,
+                                  filled=True, rounded=True, special_characters=True)
+  graph = pydotplus.graph_from_dot_data(dot_data)
+  ###保存图像到pdf文件
+  graph.write_pdf(rootPath + 'Output/mathhomework/car_price/TreeRegressor.pdf')
+
+

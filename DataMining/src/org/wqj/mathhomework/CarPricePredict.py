@@ -8,9 +8,7 @@ import os
 import sklearn.tree as tree
 import sklearn.model_selection as model_selection
 
-import pandas as  pd
 import pydotplus
-import matplotlib.pyplot as plt
 import seaborn as sns
 
 os.environ["PATH"] += os.pathsep + 'D:/Program Files/Graphviz 2.44.1/bin'
@@ -27,7 +25,7 @@ def ETL(origin_data):
     # print(origin_data.corr())
     # annot: 默认为False，为True的话，会在格子上显示数字
     # sns.heatmap(origin_data.corr(), linewidths=0.1, vmax=1.0, square=True, linecolor='white', annot=False)
-    sns.heatmap((origin_data.drop('price', axis=1).drop('car_ID', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=True)
+    sns.heatmap((origin_data.drop('price', axis=1).drop('car_ID', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=False)
     origin_data = np.mat(origin_data)
     for index in range(origin_data.shape[0]):
         origin_data[index, 2] = str(origin_data[index, 2]).split(" ")[0].lower()
@@ -104,7 +102,7 @@ plt.show()
 train, test = model_selection.train_test_split(pure_data, test_size=0.3)
 dt_reg = tree.DecisionTreeRegressor(criterion='mse', max_depth=17)
 dt_reg.fit(train[:, 0:-1], train[:, -1:])
-
+tree.plot_tree(dt_reg)
 # pip install pydotplus
 # pip install graphviz
 # 画图方法1-生成dot文件

@@ -7,9 +7,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 import os
 import sklearn.tree as tree
 import sklearn.model_selection as model_selection
-
+from sklearn import preprocessing
 import pydotplus
 import seaborn as sns
+import sklearn.decomposition as decomposition
 
 os.environ["PATH"] += os.pathsep + 'D:/Program Files/Graphviz 2.44.1/bin'
 curPath = os.path.abspath(os.path.dirname(__file__))
@@ -25,7 +26,7 @@ def ETL(origin_data):
     # print(origin_data.corr())
     # annot: 默认为False，为True的话，会在格子上显示数字
     # sns.heatmap(origin_data.corr(), linewidths=0.1, vmax=1.0, square=True, linecolor='white', annot=False)
-    sns.heatmap((origin_data.drop('price', axis=1).drop('car_ID', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=False)
+    sns.heatmap((origin_data.drop('car_ID', axis=1)).corr(), vmin=-1, vmax=1, square=True, annot=False)
     origin_data = np.mat(origin_data)
     for index in range(origin_data.shape[0]):
         origin_data[index, 2] = str(origin_data[index, 2]).split(" ")[0].lower()
@@ -67,6 +68,19 @@ def ETL(origin_data):
         origin_data[np.nonzero(origin_data[:, 17].A == k)[0], 17] = car_fuelsystem_dict[k]
     # 移除自增长id
     origin_data = np.delete(origin_data, 0, axis=1)
+    # 进行数据标准化
+    # with_mean 中心化
+    # with_std  是否标准化
+    # copy 是否复制
+    std_origin_data = preprocessing.scale(X=origin_data, with_mean=True, with_std=True, copy=True)
+    pd.DataFrame(std_origin_data).to_csv(rootPath + "Output/mathhomework/car_price/std_origin_data.csv")
+    cov_data = np.cov(std_origin_data)
+    pd.DataFrame(cov_data).to_csv(rootPath + "Output/mathhomework/car_price/cov_data.csv")
+    pca = decomposition.PCA(n_components=None, copy=True, whiten=False)
+    pca.fit(origin_data)
+    # print(pca.explained_variance_ratio_)
+    print(pca.get_precision()[0])
+    # print(pca.explained_variance_)
     return origin_data
 
 
@@ -102,7 +116,7 @@ plt.show()
 train, test = model_selection.train_test_split(pure_data, test_size=0.3)
 dt_reg = tree.DecisionTreeRegressor(criterion='mse', max_depth=17)
 dt_reg.fit(train[:, 0:-1], train[:, -1:])
-tree.plot_tree(dt_reg)
+
 # pip install pydotplus
 # pip install graphviz
 # 画图方法1-生成dot文件

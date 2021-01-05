@@ -89,16 +89,19 @@ def PCA(origin_data):
     std_price = std_df_containt_price['price']
     std_df.to_csv(rootPath + "Output/mathhomework/car_price/std_origin_data.csv")
     cov_data = std_df.corr()
-
+    cov_data.to_csv(rootPath + "Output/mathhomework/car_price/cov_data.csv")
     eig_value, eig_vector = nlg.eig(cov_data)
     eig = pd.DataFrame()  # 利用变量名和特征值建立一个数据框
     eig['names'] = cov_data.columns  # 列名
     eig['eig_value'] = eig_value  # 特征值
-    # pd.DataFrame(cov_data).to_csv(rootPath + "Output/mathhomework/car_price/cov_data.csv")
+    eig['eig_value_rate']= eig_value  # 特征值
     for k in range(1, 24):  # 确定公共因子个数
         if eig['eig_value'][:k].sum() / eig['eig_value'].sum() >= 0.85:  # 如果解释度达到00%, 结束循环
             print(k)
             break
+    #输出前N个特征值占比
+    for i in range(9):
+        print('factor%d占比%2f' % ((i + 1),eig['eig_value'][i]/eig['eig_value'].sum()))
     # k为9，前9个特征值提供了80的贡献率
     A = pd.DataFrame([sqrt(eig_value[i]) * eig_vector[:, i] for i in range(9)]).T  # 构造因子载荷矩阵A
     A.columns = ['factor%d' % (i + 1) for i in range(9)]  # 因子载荷矩阵A的公共因子
@@ -168,7 +171,7 @@ predicted = model.predict(test[:, 0:-1])
 plt.figure()
 # plt.xlabel('tree deepth')
 # plt.ylabel('accuracy rate')
-plt.title("deepth-accuracy")
+plt.title("DecisionTreeRegressor")
 plt.plot(range(len(predicted)), predicted, color='#ADFF2F')
 plt.scatter(range(len(test[:, -1:])), np.array(test[:, -1:].flatten()))
 # plt.xticks(np.arange(1, 25, 1))

@@ -1,0 +1,14 @@
+Train YOLOv5s on coco128 for 5 epochs
+$ python train.py --img 640 --batch 16 --epochs 5 --data ./data/coco128.yaml --cfg ./models/yolov5s.yaml --weights ''
+
+#从0开始训练
+python train.py --img 640 --batch 64 --epochs 200 --data ./data/coco128.yaml --cfg ./models/yolov5s.yaml --weights ''
+
+#开始检测
+python detect.py --source val: ../coco/images/train2017/ --weights ./runs/exp4/weights/best.pt
+
+
+而推断后的输出图片存放在../coco/labels/train2017/
+已经修改detect.py,直接写到labels文件夹中
+
+

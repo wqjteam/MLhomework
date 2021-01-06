@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d1a866a-66df-49d9-9531-554dbee519b5" name="Default Changelist" comment="1111">
+      <change beforePath="$PROJECT_DIR$/.idea/DataMining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataMining.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DataMining$CarPricePredict.coverage" NAME="CarPricePredict Coverage Results" MODIFIED="1608631335037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/org/wqj/mathhomework" />
+    <SUITE FILE_PATH="coverage/DataMining$ShoppingDataAnalysis.coverage" NAME="ShoppingDataAnalysis Coverage Results" MODIFIED="1606887770382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/org/wqj/lesson3" />
+    <SUITE FILE_PATH="coverage/DataMining$ShoppingDataAnalysis__1_.coverage" NAME="ShoppingDataAnalysis (1) Coverage Results" MODIFIED="1607050517569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/org/wqj/lesson2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../mlultimatework/yolov5/detect_bak.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Input/mathhomework/car_price/CarPrice_Assignment.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/anacoda/Lib/site-packages/matplotlib/pyplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40150">
+              <caret line="1657" column="4" selection-start-line="1657" selection-start-column="4" selection-end-line="1657" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2425">
+              <caret line="104" selection-start-line="104" selection-end-line="104" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/core/_multiarray_umath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5075">
+              <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson1/coo_matrix.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson1/ShoppingDataAnalysis;.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson1/ShoppingDataAnalysis.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson3/ShoppingDataAnalysis.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/util/mysqlconf.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson2/textToWord.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson1/sparse_matrix.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson1/SVDFile.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py" />
+        <option value="$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1683" />
+    <option name="y" value="-49" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="Input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="Input" type="462c0819:PsiDirectoryNode" />
+              <item name="mathhomework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="Input" type="462c0819:PsiDirectoryNode" />
+              <item name="mathhomework" type="462c0819:PsiDirectoryNode" />
+              <item name="car_price" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2020AICompetitionCode" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\car_price" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\customer_churn" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\home_price" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\src\org\wqj\mathhomework" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\develop_disk\python\MLhomework\DataMining" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\lesson1" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\lesson2" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\obestiy_data" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\src\org\wqj\lesson3" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.CarPricePredict">
+    <configuration name="CarPricePredict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/org/wqj/mathhomework" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SVDFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/org/wqj/lesson1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/org/wqj/lesson1/SVDFile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ShoppingDataAnalysis (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/org/wqj/lesson2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ShoppingDataAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/org/wqj/lesson3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/org/wqj/lesson3/ShoppingDataAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sparse_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataMining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/org/wqj/lesson1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/org/wqj/lesson1/sparse_matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.SVDFile" />
+      <item itemvalue="Python.ShoppingDataAnalysis (1)" />
+      <item itemvalue="Python.ShoppingDataAnalysis" />
+      <item itemvalue="Python.sparse_matrix" />
+      <item itemvalue="Python.CarPricePredict" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.CarPricePredict" />
+        <item itemvalue="Python.ShoppingDataAnalysis (1)" />
+        <item itemvalue="Python.ShoppingDataAnalysis" />
+        <item itemvalue="Python.sparse_matrix" />
+        <item itemvalue="Python.SVDFile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d1a866a-66df-49d9-9531-554dbee519b5" name="Default Changelist" comment="" />
+      <created>1604467912291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604467912291</updated>
+      <workItem from="1604467913914" duration="4153000" />
+      <workItem from="1604540099873" duration="8165000" />
+      <workItem from="1604625516113" duration="13942000" />
+      <workItem from="1604883948891" duration="587000" />
+      <workItem from="1604885051739" duration="596000" />
+      <workItem from="1604971559704" duration="3445000" />
+      <workItem from="1605060527624" duration="6346000" />
+      <workItem from="1605145851572" duration="617000" />
+      <workItem from="1605598305976" duration="35000" />
+      <workItem from="1606819481634" duration="1109000" />
+      <workItem from="1606870500378" duration="19251000" />
+      <workItem from="1606957002214" duration="24222000" />
+      <workItem from="1607044808825" duration="1668000" />
+      <workItem from="1607046978428" duration="14000" />
+      <workItem from="1607047403914" duration="7381000" />
+      <workItem from="1607075528126" duration="2101000" />
+      <workItem from="1607305789655" duration="12060000" />
+      <workItem from="1607389831227" duration="706000" />
+      <workItem from="1607393711813" duration="3911000" />
+      <workItem from="1607563121077" duration="1472000" />
+      <workItem from="1607924832629" duration="3263000" />
+      <workItem from="1607994235484" duration="598000" />
+      <workItem from="1608080553853" duration="1201000" />
+      <workItem from="1608166762640" duration="2970000" />
+      <workItem from="1608253097213" duration="1593000" />
+      <workItem from="1608512467658" duration="2453000" />
+      <workItem from="1608604675311" duration="4820000" />
+      <workItem from="1608619283986" duration="62000" />
+      <workItem from="1608619446175" duration="832000" />
+      <workItem from="1608620395943" duration="11845000" />
+      <workItem from="1608686242837" duration="3679000" />
+      <workItem from="1608778148938" duration="788000" />
+      <workItem from="1609117991293" duration="252000" />
+      <workItem from="1609839411298" duration="3103000" />
+      <workItem from="1609894923831" duration="1796000" />
+    </task>
+    <task id="LOCAL-00001" summary="1111">
+      <created>1604471476166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604471476166</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1111">
+      <created>1604640676098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604640676098</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1111">
+      <created>1604657332530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604657332530</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1111">
+      <created>1606901633380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606901633380</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1111">
+      <created>1606957342500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606957342500</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1111">
+      <created>1606974180026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606974180026</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1111">
+      <created>1606987943448</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606987943448</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1111">
+      <created>1607052805869</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607052805869</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1111">
+      <created>1607054194578</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607054194578</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1111">
+      <created>1607076038817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607076038817</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1111">
+      <created>1607076547582</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607076547582</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1111">
+      <created>1607076696210</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607076696210</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1111">
+      <created>1607333896323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607333896323</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1111">
+      <created>1607505945184</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607505945184</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1111">
+      <created>1608621212303</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608621212303</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1111">
+      <created>1608631402562</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608631402562</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1111">
+      <created>1608632974082</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608632974082</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1111">
+      <created>1609839813468</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609839813468</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="151036000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1358" y="-182" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.03253796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.2516269" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8667377" weight="0.2494577" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.49840087" visible="true" weight="0.22559653" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.84313726" visible="true" weight="0.23240939" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.15686275" side_tool="true" visible="true" weight="0.23240939" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.112798266" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8667377" weight="0.09544469" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.88084465" visible="true" weight="0.14232409" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.119155355" side_tool="true" weight="0.3672708" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1111" />
+    <option name="LAST_COMMIT_MESSAGE" value="1111" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>np.arange(1, 25, 1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range(len(score)+1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range(len(score))+1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range((score*1000).astype(int))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range(score)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range(score+1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(score*1000).astype(int)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>score*1000</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(score*1000)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson1/__init__.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="684" column="27" selection-start-line="684" selection-start-column="27" selection-end-line="684" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/PyQt5/QtCore/QSharedMemory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/scipy/sparse/coo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6825">
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27275">
+          <caret line="1111" column="37" selection-start-line="1111" selection-start-column="30" selection-end-line="1111" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/core/reshape/concat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5750">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50400">
+          <caret line="2020" column="4" selection-start-line="2020" selection-start-column="4" selection-end-line="2020" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson3/ShoppingDataAnalysis.py" />
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/textToWord.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/metrics/pairwise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21575">
+          <caret line="881" column="4" selection-start-line="881" selection-start-column="4" selection-end-line="881" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/util/mysqlconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson1/SVDFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson1/sparse_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/tree/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="512" column="31" selection-start-line="512" selection-start-column="31" selection-end-line="512" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Output/mathhomework/car_price/TreeRegressor.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1700">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Input/mathhomework/car_price/CarPrice_Assignment.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40150">
+          <caret line="1657" column="4" selection-start-line="1657" selection-start-column="4" selection-end-line="1657" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2425">
+          <caret line="104" selection-start-line="104" selection-end-line="104" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/core/_multiarray_umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5075">
+          <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mlultimatework/yolov5/detect_bak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

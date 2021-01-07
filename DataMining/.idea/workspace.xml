@@ -4,6 +4,10 @@
     <list default="true" id="0d1a866a-66df-49d9-9531-554dbee519b5" name="Default Changelist" comment="1111">
       <change beforePath="$PROJECT_DIR$/.idea/DataMining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataMining.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZF2021347_吴清杰_大数据论文.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZF2021347_吴清杰_数学论文.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ZF2021347_吴清杰_数学论文.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
+            <state relative-caret-position="315">
+              <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -30,55 +34,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../mlultimatework/yolov5/detect_bak.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Output/mathhomework/car_price/loadfactormatrix .csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Input/mathhomework/car_price/CarPrice_Assignment.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
             <state>
               <caret column="6" selection-end-column="6" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/anacoda/Lib/site-packages/matplotlib/pyplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40150">
-              <caret line="1657" column="4" selection-start-line="1657" selection-start-column="4" selection-end-line="1657" selection-end-column="4" />
-            </state>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2425">
+            <state relative-caret-position="2619">
               <caret line="104" selection-start-line="104" selection-end-line="104" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/core/_multiarray_umath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5075">
-              <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -111,11 +98,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1683" />
-    <option name="y" value="-49" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="391" />
+    <option name="y" value="55" />
+    <option name="width" value="1944" />
+    <option name="height" value="1106" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -123,7 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +131,18 @@
             <path>
               <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataMining" type="462c0819:PsiDirectoryNode" />
-              <item name="Input" type="462c0819:PsiDirectoryNode" />
+              <item name="Output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="Output" type="462c0819:PsiDirectoryNode" />
+              <item name="mathhomework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="Output" type="462c0819:PsiDirectoryNode" />
               <item name="mathhomework" type="462c0819:PsiDirectoryNode" />
               <item name="car_price" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -153,6 +150,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,19 +161,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\car_price" />
-      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\customer_churn" />
-      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\home_price" />
-      <recent name="D:\develop_disk\python\MLhomework\DataMining\src\org\wqj\mathhomework" />
-      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\develop_disk\python\MLhomework\DataMining" />
       <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\lesson1" />
       <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\lesson2" />
       <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\obestiy_data" />
       <recent name="D:\develop_disk\python\MLhomework\DataMining\src\org\wqj\lesson3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop_disk\python_space\MLhomework\DataMining" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\car_price" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\customer_churn" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\Input\mathhomework\home_price" />
+      <recent name="D:\develop_disk\python\MLhomework\DataMining\src\org\wqj\mathhomework" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,6 +383,8 @@
       <workItem from="1609117991293" duration="252000" />
       <workItem from="1609839411298" duration="3103000" />
       <workItem from="1609894923831" duration="1796000" />
+      <workItem from="1609942124081" duration="2121000" />
+      <workItem from="1610030941341" duration="4207000" />
     </task>
     <task id="LOCAL-00001" summary="1111">
       <created>1604471476166</created>
@@ -512,11 +512,25 @@
       <option name="project" value="LOCAL" />
       <updated>1609839813468</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1111">
+      <created>1610034138697</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610034138697</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1111">
+      <created>1610036006414</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610036006414</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151036000" />
+    <option name="totallyTimeSpent" value="157364000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -528,54 +542,55 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-182" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="261" y="37" width="1296" height="737" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27221325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.03253796" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.2516269" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" weight="0.329718" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8667377" weight="0.2494577" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.49840087" visible="true" weight="0.22559653" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49840087" weight="0.03253796" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4989339" weight="0.2516269" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8667377" weight="0.2494577" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49840087" weight="0.22557727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.84313726" visible="true" weight="0.23240939" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.15686275" side_tool="true" visible="true" weight="0.23240939" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.8348624" weight="0.23201293" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.16513762" side_tool="true" weight="0.23201293" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2724333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.112798266" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840087" weight="0.329718" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8667377" weight="0.09544469" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49840087" weight="0.03253796" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.4989339" weight="0.2516269" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13326226" side_tool="true" weight="0.28091106" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8667377" weight="0.2494577" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49840087" visible="true" weight="0.22557727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.88084465" visible="true" weight="0.14232409" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.119155355" side_tool="true" weight="0.3672708" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.8348624" visible="true" weight="0.23201293" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.16513762" side_tool="true" visible="true" weight="0.23201293" />
       <window_info anchor="right" id="Database" order="5" />
     </layout-to-restore>
   </component>
@@ -637,57 +652,15 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson1/__init__.py" />
-    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="684" column="27" selection-start-line="684" selection-start-column="27" selection-end-line="684" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/PyQt5/QtCore/QSharedMemory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/scipy/sparse/coo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6825">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27275">
-          <caret line="1111" column="37" selection-start-line="1111" selection-start-column="30" selection-end-line="1111" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/pandas/core/reshape/concat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5750">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50400">
-          <caret line="2020" column="4" selection-start-line="2020" selection-start-column="4" selection-end-line="2020" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/parsers.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/PyQt5/QtCore/QSharedMemory.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/scipy/sparse/coo.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/io/sql.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/core/reshape/concat.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/random/mtrand.py" />
     <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson3/ShoppingDataAnalysis.py" />
     <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/textToWord.py" />
-    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/metrics/pairwise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21575">
-          <caret line="881" column="4" selection-start-line="881" selection-start-column="4" selection-end-line="881" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/metrics/pairwise.py" />
     <entry file="file://$PROJECT_DIR$/src/org/wqj/util/mysqlconf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -715,16 +688,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="512" column="31" selection-start-line="512" selection-start-column="31" selection-end-line="512" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/pandas/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/sklearn/tree/tree.py" />
+    <entry file="file://D:/anacoda/Lib/site-packages/pandas/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Output/mathhomework/car_price/TreeRegressor.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1700">
@@ -732,36 +697,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/anacoda/Lib/site-packages/matplotlib/pyplot.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/core/_multiarray_umath.py" />
+    <entry file="file://$PROJECT_DIR$/../mlultimatework/yolov5/detect_bak.py" />
     <entry file="file://$PROJECT_DIR$/Input/mathhomework/car_price/CarPrice_Assignment.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret column="6" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://D:/anacoda/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40150">
-          <caret line="1657" column="4" selection-start-line="1657" selection-start-column="4" selection-end-line="1657" selection-end-column="4" />
-        </state>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/wqj/lesson2/ShoppingDataAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2425">
+        <state relative-caret-position="2619">
           <caret line="104" selection-start-line="104" selection-end-line="104" selection-end-column="28" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -769,18 +720,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1808450613/numpy/core/_multiarray_umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5075">
-          <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
+    <entry file="file://$PROJECT_DIR$/Output/mathhomework/car_price/loadfactormatrix .csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mlultimatework/yolov5/detect_bak.py">
+    <entry file="file://$PROJECT_DIR$/src/org/wqj/mathhomework/CarPricePredict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="315">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

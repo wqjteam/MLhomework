@@ -96,13 +96,12 @@ def PCA(origin_data):
     eig['eig_value'] = eig_value  # 特征值
     eig['eig_value_rate']= eig_value  # 特征值
     for k in range(1, 24):  # 确定公共因子个数
-        if eig['eig_value'][:k].sum() / eig['eig_value'].sum() >= 0.85:  # 如果解释度达到00%, 结束循环
+        if eig['eig_value'][:k].sum() / eig['eig_value'].sum() >= 0.85:  # 如果解释度达到85%, 结束循环
             print(k)
             break
     #输出前N个特征值占比
     for i in range(9):
-        print('factor%d占比%2f' % ((i + 1),eig['eig_value'][i]/eig['eig_value'].sum()))
-    # k为9，前9个特征值提供了80的贡献率
+        print('factor%d占比%2f' % ((i + 1),eig['eig_value'][i]/eig['eig_value'].sum()))# k为9，前9个特征值提供了80的贡献率
     A = pd.DataFrame([sqrt(eig_value[i]) * eig_vector[:, i] for i in range(9)]).T  # 构造因子载荷矩阵A
     A.columns = ['factor%d' % (i + 1) for i in range(9)]  # 因子载荷矩阵A的公共因子
     h = np.zeros(21)  # 变量共同度，反映变量对共同因子的依赖程度，越接近1，说明公共因子解释程度越高，因子分析效果越好

@@ -11,8 +11,8 @@ for f in os.listdir(rootPath + "\\yolov5\\runs\\detect\\"):
     if ((int(fp.replace("exp", ""))) > max):
         max = int(fp.replace("exp", ""))
         maxepoch = f
+maxepoch = "exp26"
 label_path = rootPath + "\\yolov5\\runs\\detect\\" + maxepoch
-jpg_path = rootPath + "\\yolov5\\runs\\detect\\" + maxepoch
 result_file = glob.glob(label_path + '*.txt')
 
 f = open(rootPath + "\\yolov5\\result.txt", "w")

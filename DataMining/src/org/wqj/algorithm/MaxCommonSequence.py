@@ -1,57 +1,43 @@
-import numpy as np
-
-N = 1024;
-c = np.empty((N, N))
-b = np.empty((N, N))
-s1 = np.array(N)
-s2 = np.array(N);
-len1 = 0
-len2 = 0;
-
-
-def LCS():
-    for i in range(1, len1):
-        for j in range(1, len2):
-            # 注：此处的s1与s2序列是从s1[0]与s2[0]开始的
-            if (s1[i - 1] == s2[j - 1]):
-                c[i][j] = c[i - 1][j - 1] + 1;
-                b[i][j] = 1;
+#最长字符串
+def lcs(a, b):
+    a_len = len(a)
+    b_len = len(b)
+    c = [[0 for i in range(b_len + 1)] for j in range(a_len + 1)]
+    flag = [[0 for i in range(b_len + 1)] for j in range(a_len + 1)]
+    for i in range(a_len):
+        for j in range(b_len):
+            if a[i] == b[j]:
+                c[i + 1][j + 1] = c[i][j] + 1
+                flag[i + 1][j + 1] = 'ok'
+            elif c[i + 1][j] > c[i][j + 1]:
+                c[i + 1][j + 1] = c[i + 1][j]
+                flag[i + 1][j + 1] = 'left'
             else:
-                if (c[i][j - 1] >= c[i - 1][j]):
-                    c[i][j] = c[i][j - 1]
-                    b[i][j] = 2
-                else:
-                    c[i][j] = c[i - 1][j]
-                    b[i][j] = 3
+                c[i + 1][j + 1] = c[i][j + 1]
+                flag[i + 1][j + 1] = 'up'
+    return c, flag
 
-
-def LCS_PRINT(i, j):
-    if (i == 0 or j == 0):
-        return;
-    if (b[i][j] == 1):
-        LCS_PRINT(i - 1, j - 1);
-        print(s1[i - 1])
-
+#对辅助矩阵进行输出
+def printLcs(flag, a, i, j):
+    if i == 0 or j == 0:
+        return
+    if flag[i][j] == 'ok':
+        printLcs(flag, a, i - 1, j - 1)
+        print(a[i - 1], end='')
+    elif flag[i][j] == 'left':
+        printLcs(flag, a, i, j - 1)
     else:
-        if (b[i][j] == 2):
-            LCS_PRINT(i, j - 1);
-
-        else:
-            LCS_PRINT(i - 1, j);
+        printLcs(flag, a, i - 1, j)
 
 
-if __name__ == '__main__':
-    print("请输入X字符串")
-    s1 = input();
-    print("请输入Y字符串")
-    s2 = input();
-    len1 = len(s1)
-    len2 = len(s2)
-    for i in range(0, len1):
-        c[i][0] = 0;
-    for j in range(0, len2):
-        c[0][j] = 0;
-    LCS();
-    print("s1与s2的最长公共子序列的长度是：%d") % c[len1][len2]
-    print("s1与s2的最长公共子序列是：%d") % LCS_PRINT(len1, len2)
-    # return 0;
+a = 'XYXZYXY'
+b = 'XZYZZYX'
+c, flag = lcs(a, b)
+# for i in c:
+#     print(i)
+# print('')
+# for j in flag:
+#     print(j)
+# print('')
+print("最长子序列为：")
+printLcs(flag, a, len(a), len(b))

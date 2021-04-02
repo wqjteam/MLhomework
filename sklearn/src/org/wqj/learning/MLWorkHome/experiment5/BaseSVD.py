@@ -76,9 +76,10 @@ def svdEst(dataMat, user, simMeas, item, percentage):
         if userRating == 0 or j == item: continue
         # 计算物品item与物品j之间的相似度
         similarity = simMeas(xformedItems[item, :].T, xformedItems[j, :].T)
-        # 对所有相似度求和
+        # 对所有相似度求和  (将单个没打过评分的物品对比所有打过评分物品,相似度相加)
         simTotal += similarity
         # 用"物品item和物品j的相似度"乘以"用户对物品j的评分"，并求和
+        # 从单个已评分物品的角度来看,用户实际可能多未评分的物品进行评分累加
         ratSimTotal += similarity * userRating
     if simTotal == 0:
         return 0

@@ -58,12 +58,12 @@ def svdEst(dataMat,user,simMeas,item,percentage):
     n=shape(dataMat)[1]
     simTotal=0.0;ratSimTotal=0.0
     u,sigma,vt=la.svd(dataMat)
-    k=sigmaPct(sigma,percentage)
     # 确定了需要保留的奇异值数量k
-    sigmaK=mat(eye(k)*sigma[:k])
+    k=sigmaPct(sigma,percentage)
     #构建对角矩阵
-    xformedItems=dataMat.T*u[:,:k]*sigmaK.I
+    sigmaK=mat(eye(k)*sigma[:k])
     #根据k的值将原始数据转换到k维空间(低维),xformedItems表示物品(item)在k维空间转换后的值
+    xformedItems=dataMat.T*u[:,:k]*sigmaK.I
     for j in range(n):
         userRating=dataMat[user,j]
         if userRating==0 or j==item:continue

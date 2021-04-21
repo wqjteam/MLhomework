@@ -14,7 +14,8 @@ class TreeNode:
     def __str__(self):
         childidarr = [str(item.id) for item in self.children]
         strids = ",".join(childidarr)
-        return 'id：%d  内容：%s  父id：%d  子ids : %s  插入时间:%d' % (self.id, self.content, self.parentid, strids, self.inserttime)
+        return 'id：%d  内容：%s  父id：%d  子ids : %s  插入时间:%d' % (
+            self.id, self.content, self.parentid, strids, self.inserttime)
 
     def __repr__(self):
         return repr((self.id, self.content, self.parentid, self.children, self.inserttime))
@@ -46,6 +47,7 @@ def preOrder(tree):
     # 记住层数,第一层是对消息回复,第二层是对用户id回复
     nodelevelstack = []
     nodePUserAccountStack = []
+    commentNum = 0
     # 先将外面的两个node压入栈中,
     # 也就是时间越小的 越靠右边的子树,但是却最先入栈
     for item in reversed(tree):
@@ -62,6 +64,7 @@ def preOrder(tree):
         # 这里读取节点,可以将数据存在一个新的list中
         # 输出,在显示中第一层的直接对评论回复,第二层以上的 对用户id回复,可以取PUseraccount值
         print("节点信息:%s     ++++++层级:%d    父级内容:%s" % (str(tempnode), nodelevel, PUseraccount))
+        commentNum = commentNum + 1 #这个是总的评论数
         top = top - 1
 
         # 将他的子节点压入栈中,也需要保证排序,时间小的先进去
@@ -88,7 +91,7 @@ if __name__ == '__main__':
     # list转tree
     tree = ListToTree(nodelist, -1)
 
-    print(json.dumps(tree, default=lambda item: item.__dict__, allow_nan=False,skipkeys=True))
+    print(json.dumps(tree, default=lambda item: item.__dict__, allow_nan=False, skipkeys=True))
 
     # 前序遍历
     preOrder(tree)

@@ -1,5 +1,5 @@
 from math import sqrt
-
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -82,15 +82,38 @@ def PCA(origin_data):
     origin_data = pd.DataFrame(origin_data)
     columns_list = list(origin_data_columns.values)
     columns_list.pop(0)
+
+    #
+    #
+    # 将数据进行标准化
+    #
+    #
     std_origin_data = preprocessing.scale(X=origin_data, with_mean=True, with_std=True, copy=True)
     std_df_containt_price = pd.DataFrame(std_origin_data)
     std_df_containt_price.columns = columns_list
     std_df = std_df_containt_price.drop(['price'], axis=1)
     std_price = std_df_containt_price['price']
     std_df.to_csv(rootPath + "Output/mathhomework/car_price/std_origin_data.csv")
+    #
+    #
+    # 获取数据协方差
+    #
+    #
     cov_data = std_df.corr()
     cov_data.to_csv(rootPath + "Output/mathhomework/car_price/cov_data.csv")
+    #
+    #
+    # 计算特征值
+    #
+    #
     eig_value, eig_vector = nlg.eig(cov_data)
+
+
+    #
+    #
+    # 获取主要成分
+    #
+    #
     eig = pd.DataFrame()  # 利用变量名和特征值建立一个数据框
     eig['names'] = cov_data.columns  # 列名
     eig['eig_value'] = eig_value  # 特征值
@@ -102,8 +125,13 @@ def PCA(origin_data):
     #输出前N个特征值占比
     for i in range(9):
         print('factor%d占比%2f' % ((i + 1),eig['eig_value'][i]/eig['eig_value'].sum()))# k为9，前9个特征值提供了80的贡献率
+
+    #
+    #
+    # 获取因子载荷矩阵,并按照方差最大的方向旋转
+    #
+    #
     A = pd.DataFrame([sqrt(eig_value[i]) * eig_vector[:, i] for i in range(9)]).T  # 构造因子载荷矩阵A
-    A.columns = ['factor%d' % (i + 1) for i in range(9)]  # 因子载荷矩阵A的公共因子
     h = np.zeros(21)  # 变量共同度，反映变量对共同因子的依赖程度，越接近1，说明公共因子解释程度越高，因子分析效果越好
     D = np.mat(np.eye(21))  # 特殊因子方差，因子的方差贡献度 ，反映公共因子对变量的贡献，衡量公共因子的相对重要性
     A = np.mat(A)  # 将因子载荷阵A矩阵化
@@ -113,14 +141,16 @@ def PCA(origin_data):
         D[i, i] = 1 - a[0, 0]  # 因为自变量矩阵已经标准化后的方差为1，即Var(X_i)=第i个共同度h_i + 第i个特殊因子方差
     rotation_mat = varimax(A)  # 调用方差最大旋转函数
     rotation_mat = pd.DataFrame(rotation_mat)  # 数据框化
-    rotation_mat.columns = ['factor%d' % (i + 1) for i in range(9)]
+    rotation_mat.columns = ['factor%d' % (i + 1) for i in range(9)]  # 设置因子载荷矩阵A的公共因子列名1,2,3,4,5,6
     # 已旋转
     columns_list.pop(-1)
     rotation_mat.index = columns_list
     rotation_mat.to_csv(rootPath + "Output/mathhomework/car_price/loadfactormatrix .csv")
 
 
-def varimax(Phi, gamma=1.0, q=20, tol=1e-6):  # 定义方差最大旋转函数
+
+# 定义方差最大旋转函数
+def varimax(Phi, gamma=1.0, q=20, tol=1e-6):
     p, k = Phi.shape  # 给出矩阵Phi的总行数，总列数
     R = np.eye(k)  # 给定一个k*k的单位矩阵
     d = 0
@@ -141,6 +171,7 @@ pure_data = ETL(origin_data)
 PCA(pure_data)
 print(pure_data[:2, :])
 
+sys.exit()
 
 # 对决策树深度进行判断
 score = np.empty((1, 24), dtype=float)

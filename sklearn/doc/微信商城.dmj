@@ -1,0 +1,498 @@
+{
+  "RootName": "DataModels",
+  "CTVER": "43543234",
+  "TableCount": 4,
+  "Count": 1,
+  "items": [{
+    "ID": 9,
+    "Name": "微信商城",
+    "CreateDate": "2022/2/10 15:53:07",
+    "OrderNo": 1,
+    "Tables": {
+      "Count": 4,
+      "items": [
+        {
+          "ID": 1,
+          "Name": "commodity",
+          "Caption": "商品表",
+          "Memo": "主要为电子书籍",
+          "CreateDate": "2022/2/10 15:53:32",
+          "OrderNo": 1,
+          "GraphDesc": "Left=1141.00\r\nTop=187.00",
+          "MetaFields": {
+            "Count": 16,
+            "items": [
+              {
+                "ID": 23,
+                "Name": "c_id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 24,
+                "Name": "c_name",
+                "OrderNo": 2,
+                "DisplayName": "商品名称",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 25,
+                "Name": "c_description",
+                "OrderNo": 3,
+                "DisplayName": "商品描述",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 26,
+                "Name": "c_picture_url",
+                "OrderNo": 4,
+                "DisplayName": "商品图片存放的url",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 27,
+                "Name": "c_price",
+                "OrderNo": 5,
+                "DisplayName": "商品价格",
+                "DataType": 3,
+                "DataTypeName": "Double",
+                "Nullable": true
+              },
+              {
+                "ID": 16,
+                "Name": "c_discount",
+                "CreateDate": "2022/2/15 17:35:55",
+                "OrderNo": 6,
+                "DisplayName": "折扣率",
+                "DataType": 3,
+                "DataTypeName": "Double",
+                "Nullable": true
+              },
+              {
+                "ID": 36,
+                "Name": "c_sort",
+                "CreateDate": "2022/2/10 16:19:37",
+                "OrderNo": 7,
+                "DisplayName": "商品类别",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "sort",
+                "RelateField": "s_id",
+                "Nullable": true,
+                "GraphDesc": "P1=1334.00,555.00\r\nP2=1334.00,502.00\r\nP3=1334.00,502.00\r\nP4=1334.00,449.00\r\nHookP1=74.00,20.00\r\nHookP2=193.00,242.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 29,
+                "Name": "c_salesvolume",
+                "OrderNo": 8,
+                "DisplayName": "销售量",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 30,
+                "Name": "c_author",
+                "CreateDate": "2022/2/10 16:11:13",
+                "OrderNo": 9,
+                "DisplayName": "作者",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 34,
+                "Name": "c_commentnumber",
+                "CreateDate": "2022/2/10 16:15:25",
+                "OrderNo": 10,
+                "DisplayName": "总评价数",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 35,
+                "Name": "c_applauserate",
+                "CreateDate": "2022/2/10 16:15:25",
+                "OrderNo": 11,
+                "DisplayName": "好评率",
+                "DataType": 3,
+                "Nullable": true
+              },
+              {
+                "ID": 31,
+                "Name": "c_launchtime",
+                "CreateDate": "2022/2/10 16:11:13",
+                "OrderNo": 12,
+                "DisplayName": "上架时间",
+                "DataType": 4,
+                "DataTypeName": "Timestample",
+                "Nullable": true
+              },
+              {
+                "ID": 32,
+                "Name": "c_removetime",
+                "CreateDate": "2022/2/10 16:11:13",
+                "OrderNo": 13,
+                "DisplayName": "下架时间",
+                "DataType": 4,
+                "Nullable": true
+              },
+              {
+                "ID": 33,
+                "Name": "c_isdelete",
+                "CreateDate": "2022/2/10 16:12:29",
+                "OrderNo": 14,
+                "DisplayName": "删除标志",
+                "DataType": 2,
+                "DataTypeName": "Integer",
+                "Nullable": true
+              },
+              {
+                "ID": 37,
+                "Name": "c_createtime",
+                "CreateDate": "2022/2/10 16:36:38",
+                "OrderNo": 15,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Nullable": true
+              },
+              {
+                "ID": 38,
+                "Name": "c_modifytime",
+                "CreateDate": "2022/2/10 16:36:38",
+                "OrderNo": 16,
+                "DisplayName": "修改时间",
+                "DataType": 4,
+                "Nullable": true
+              }
+            ]
+          }
+        },
+        {
+          "ID": 2,
+          "Name": "user",
+          "Caption": "用户表",
+          "CreateDate": "2022/2/10 16:17:30",
+          "OrderNo": 2,
+          "GraphDesc": "Left=602.00\r\nTop=200.00",
+          "MetaFields": {
+            "Count": 10,
+            "items": [
+              {
+                "ID": 23,
+                "Name": "u_id",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 24,
+                "Name": "u_nickname",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 2,
+                "DisplayName": "昵称",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 25,
+                "Name": "u_realname",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 3,
+                "DisplayName": "真实姓名",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 27,
+                "Name": "u_saltpassword",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 4,
+                "DisplayName": "加盐密码",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 28,
+                "Name": "u_gender",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 5,
+                "DisplayName": "性别",
+                "DataType": 6,
+                "Nullable": true
+              },
+              {
+                "ID": 29,
+                "Name": "u_phone",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 6,
+                "DisplayName": "电话号码",
+                "DataType": 1,
+                "IndexType": 2
+              },
+              {
+                "ID": 30,
+                "Name": "u_wechat",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 7,
+                "DisplayName": "微信id",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 31,
+                "Name": "u_isdelete",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 8,
+                "DisplayName": "是否删除",
+                "DataType": 2,
+                "DataTypeName": "int",
+                "DefaultValue": "0",
+                "Nullable": true
+              },
+              {
+                "ID": 32,
+                "Name": "u_createtime",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 9,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Nullable": true
+              },
+              {
+                "ID": 33,
+                "Name": "u_modifytime",
+                "CreateDate": "2022/2/10 16:34:59",
+                "OrderNo": 10,
+                "DisplayName": "修改时间",
+                "DataType": 4,
+                "Nullable": true
+              }
+            ]
+          }
+        },
+        {
+          "ID": 3,
+          "Name": "order",
+          "Caption": "订单表",
+          "CreateDate": "2022/2/10 16:18:00",
+          "OrderNo": 3,
+          "GraphDesc": "Left=759.00\r\nTop=556.00",
+          "MetaFields": {
+            "Count": 16,
+            "items": [
+              {
+                "ID": 23,
+                "Name": "o_id",
+                "CreateDate": "2022/2/10 16:43:25",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 24,
+                "Name": "o_userid",
+                "CreateDate": "2022/2/10 16:43:25",
+                "OrderNo": 2,
+                "DisplayName": "用户编号",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "user",
+                "RelateField": "u_id",
+                "Nullable": true,
+                "GraphDesc": "P1=790.00,398.00\r\nP2=790.00,477.00\r\nP3=790.00,477.00\r\nP4=790.00,556.00\r\nHookP1=188.00,178.00\r\nHookP2=31.00,20.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 25,
+                "Name": "o_commodityid",
+                "CreateDate": "2022/2/10 16:43:25",
+                "OrderNo": 3,
+                "DisplayName": "商品编号",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "commodity",
+                "RelateField": "c_id",
+                "Nullable": true,
+                "GraphDesc": "P1=1169.00,449.00\r\nP2=1169.00,584.00\r\nP3=1169.00,584.00\r\nP4=1026.00,584.00\r\nHookP1=28.00,234.00\r\nHookP2=239.00,28.00\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=1"
+              },
+              {
+                "ID": 16,
+                "Name": "o_price",
+                "CreateDate": "2022/2/15 17:36:40",
+                "OrderNo": 4,
+                "DisplayName": "订单价格",
+                "DataType": 3,
+                "DataTypeName": "double",
+                "RelateTable": "commodity",
+                "RelateField": "c_id",
+                "Nullable": true
+              },
+              {
+                "ID": 26,
+                "Name": "o_status",
+                "CreateDate": "2022/2/10 16:43:25",
+                "OrderNo": 5,
+                "DisplayName": "订单状态",
+                "DataType": 6,
+                "Nullable": true
+              },
+              {
+                "ID": 27,
+                "Name": "o_comment",
+                "CreateDate": "2022/2/10 16:45:11",
+                "OrderNo": 6,
+                "DisplayName": "评价",
+                "Nullable": true
+              },
+              {
+                "ID": 32,
+                "Name": "o_commentpictureurl1",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 7,
+                "DisplayName": "评价图片1",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 33,
+                "Name": "o_commentpictureurl2",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 8,
+                "DisplayName": "评价图片2",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 34,
+                "Name": "o_commentpictureurl3",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 9,
+                "DisplayName": "评价图片3",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 39,
+                "Name": "o_commentgrade",
+                "CreateDate": "2022/2/10 16:48:41",
+                "OrderNo": 10,
+                "DisplayName": "评价等级",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 35,
+                "Name": "o_comment2",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 11,
+                "DisplayName": "追加评价",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 36,
+                "Name": "o_comment2pictureurl1",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 12,
+                "DisplayName": "追加评价图片1",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 37,
+                "Name": "o_comment2pictureurl2",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 13,
+                "DisplayName": "追加评价图片2",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 38,
+                "Name": "o_comment2pictureurl3",
+                "CreateDate": "2022/2/10 16:46:43",
+                "OrderNo": 14,
+                "DisplayName": "追加评价图片3",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 30,
+                "Name": "o_createtime",
+                "CreateDate": "2022/2/10 16:45:11",
+                "OrderNo": 15,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Nullable": true
+              },
+              {
+                "ID": 31,
+                "Name": "o_modifytime",
+                "CreateDate": "2022/2/10 16:45:11",
+                "OrderNo": 16,
+                "DisplayName": "修改时间",
+                "DataType": 4,
+                "Nullable": true
+              }
+            ]
+          }
+        },
+        {
+          "ID": 4,
+          "Name": "sort",
+          "Caption": "类别表",
+          "CreateDate": "2022/2/10 16:18:25",
+          "OrderNo": 4,
+          "GraphDesc": "Left=1260.00\r\nTop=555.00",
+          "MetaFields": {
+            "Count": 4,
+            "items": [
+              {
+                "ID": 23,
+                "Name": "s_id",
+                "CreateDate": "2022/2/10 16:37:14",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "Nullable": true
+              },
+              {
+                "ID": 24,
+                "Name": "s_name",
+                "CreateDate": "2022/2/10 16:37:14",
+                "OrderNo": 2,
+                "DisplayName": "类别名称",
+                "DataType": 1,
+                "Nullable": true
+              },
+              {
+                "ID": 25,
+                "Name": "s_createtime",
+                "CreateDate": "2022/2/10 16:43:37",
+                "OrderNo": 3,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Nullable": true
+              },
+              {
+                "ID": 26,
+                "Name": "s_modifytime",
+                "CreateDate": "2022/2/10 16:43:37",
+                "OrderNo": 4,
+                "DisplayName": "修改时间",
+                "DataType": 4,
+                "Nullable": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }]
+}
